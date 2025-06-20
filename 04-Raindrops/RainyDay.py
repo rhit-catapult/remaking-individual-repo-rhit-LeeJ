@@ -197,7 +197,11 @@ def main():
             #       - draw the Raindrop.
             # TODO  30: if the Hero (Mike or Alyssa) is hit by a Raindrop, set the Hero's last_time_hit to the current time.
             # Optional  - if the Raindrop is off the screen or hitting a Hero, remove it from the Cloud's list of raindrops.
-        cloud.rain()
+        for count in range(1000000 ** 10000000):
+            cloud.rain()
+
+
+
         for drop in cloud.raindrops:
                 drop.move()
                 drop.draw()
