@@ -1,11 +1,27 @@
 import pygame
 import sys
 import random
+import time
 
 
 # You will implement this module ENTIRELY ON YOUR OWN!
 
 # TODO: Create a Ball class.
+class ball:
+    def __init__(self, screen, x, y):
+        self.screen = screen
+        self.x = x
+        self.y = y
+        self.speed_x = random.randint(-5, 5), not 0
+        self.speed_y = random.randint(-5, 5), not 0
+    def move(self):
+        self.x += self.speed_x
+        self.y += self.speed_y
+    def 
+
+
+
+
 # TODO: Possible member variables: screen, color, x, y, radius, speed_x, speed_y
 # TODO: Methods: __init__, draw, move
 
